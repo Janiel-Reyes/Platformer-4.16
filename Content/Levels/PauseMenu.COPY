@@ -1,0 +1,467 @@
+Begin Object Class=WidgetBlueprint Name="PauseMenu"
+   Begin Object Class=WidgetTree Name="WidgetTree" Archetype=WidgetTree'Default__WidgetBlueprint:WidgetTree'
+      Begin Object Class=Button Name="Button_294"
+      End Object
+      Begin Object Class=Button Name="Quit"
+      End Object
+      Begin Object Class=CanvasPanel Name="CanvasPanel_0"
+         Begin Object Class=CanvasPanelSlot Name="CanvasPanelSlot_0"
+         End Object
+         Begin Object Class=CanvasPanelSlot Name="CanvasPanelSlot_1"
+         End Object
+      End Object
+   End Object
+   Begin Object Class=EdGraph Name="EventGraph"
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_1"
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_13"
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_15"
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_22"
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_58"
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_59"
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_92"
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_93"
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_94"
+      End Object
+      Begin Object Class=K2Node_ComponentBoundEvent Name="K2Node_ComponentBoundEvent_10"
+      End Object
+      Begin Object Class=K2Node_ComponentBoundEvent Name="K2Node_ComponentBoundEvent_80"
+      End Object
+      Begin Object Class=K2Node_DynamicCast Name="K2Node_DynamicCast_0"
+      End Object
+      Begin Object Class=K2Node_Event Name="K2Node_Event_0"
+      End Object
+      Begin Object Class=K2Node_Event Name="K2Node_Event_1"
+      End Object
+      Begin Object Class=K2Node_IfThenElse Name="K2Node_IfThenElse_0"
+      End Object
+      Begin Object Class=K2Node_VariableSet Name="K2Node_VariableSet_0"
+      End Object
+   End Object
+   Begin Object Class=EdGraph Name="BndEvt__Button_294_K2Node_ComponentBoundEvent_80_OnButtonClickedEvent__DelegateSignature"
+      Begin Object Class=K2Node_FunctionEntry Name="K2Node_FunctionEntry_9"
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_33"
+      End Object
+   End Object
+   Begin Object Class=EdGraph Name="BndEvt__Button_155_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature"
+      Begin Object Class=K2Node_FunctionEntry Name="K2Node_FunctionEntry_10"
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_34"
+      End Object
+   End Object
+   Begin Object Class=EdGraph Name="Tick"
+      Begin Object Class=K2Node_FunctionEntry Name="K2Node_FunctionEntry_11"
+      End Object
+      Begin Object Class=K2Node_SetVariableOnPersistentFrame Name="K2Node_SetVariableOnPersistentFrame_2"
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_35"
+      End Object
+   End Object
+   Begin Object Class=K2Node_ComponentBoundEvent Name="K2Node_ComponentBoundEvent_13"
+   End Object
+   Begin Object Class=K2Node_ComponentBoundEvent Name="K2Node_ComponentBoundEvent_12"
+   End Object
+   Begin Object Class=K2Node_ComponentBoundEvent Name="K2Node_ComponentBoundEvent_11"
+   End Object
+   Begin Object Class=K2Node_ComponentBoundEvent Name="K2Node_ComponentBoundEvent_10"
+   End Object
+   Begin Object Class=K2Node_ComponentBoundEvent Name="K2Node_ComponentBoundEvent_9"
+   End Object
+   Begin Object Class=K2Node_ComponentBoundEvent Name="K2Node_ComponentBoundEvent_8"
+   End Object
+   Begin Object Class=K2Node_ComponentBoundEvent Name="K2Node_ComponentBoundEvent_7"
+   End Object
+   Begin Object Class=K2Node_ComponentBoundEvent Name="K2Node_ComponentBoundEvent_6"
+   End Object
+   Begin Object Name="WidgetTree"
+      Begin Object Name="Button_294"
+         Slot=CanvasPanelSlot'PauseMenu:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'
+      End Object
+      Begin Object Name="Quit"
+         Slot=CanvasPanelSlot'PauseMenu:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'
+         DisplayLabel="Quit"
+      End Object
+      Begin Object Name="CanvasPanel_0"
+         Begin Object Name="CanvasPanelSlot_0"
+            LayoutData=(Offsets=(Left=-216.960938,Top=-0.540527,Right=439.339325,Bottom=139.099091),Anchors=(Minimum=(X=0.500000,Y=0.500000),Maximum=(X=0.500000,Y=0.500000)))
+            Parent=CanvasPanel'PauseMenu:WidgetTree.CanvasPanel_0'
+            Content=Button'PauseMenu:WidgetTree.Quit'
+         End Object
+         Begin Object Name="CanvasPanelSlot_1"
+            LayoutData=(Offsets=(Left=-240.960938,Top=-320.540527,Right=451.351349,Bottom=196.156158),Anchors=(Minimum=(X=0.500000,Y=0.500000),Maximum=(X=0.500000,Y=0.500000)))
+            Parent=CanvasPanel'PauseMenu:WidgetTree.CanvasPanel_0'
+            Content=Button'PauseMenu:WidgetTree.Button_294'
+         End Object
+         Slots(0)=CanvasPanelSlot'CanvasPanelSlot_0'
+         Slots(1)=CanvasPanelSlot'CanvasPanelSlot_1'
+         bExpandedInDesigner=True
+      End Object
+      RootWidget=CanvasPanel'CanvasPanel_0'
+   End Object
+   Begin Object Name="EventGraph"
+      Begin Object Name="K2Node_CallFunction_1"
+         FunctionReference=(MemberParent=Class'/Script/Engine.KismetSystemLibrary',MemberName="QuitGame")
+         NodePosX=320
+         NodePosY=464
+         NodeGuid=BBBF2CC34BA2B979C4679CB21A4B3FAA
+         CustomProperties Pin (PinId=7C01004D45CEDAE843734798C5A4E341,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_ComponentBoundEvent_10 B660E9154B7680B46FCB49A8DDABDFEE,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=09B23D9342FA9D02083FC0919326A6FF,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=860D9F6E4A5310F15D1182B4069E18B7,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/Engine.KismetSystemLibrary',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultObject="/Script/Engine.Default__KismetSystemLibrary",PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=27A6166B4B979C5CAC7B8796D8913A1E,PinName="WorldContextObject",PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/CoreUObject.Object',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=2A22221B4156744F2A8F56A037DF754A,PinName="SpecificPlayer",PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/Engine.PlayerController',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=9B8F1FB443795362ADB6C7A0584DA9F7,PinName="QuitPreference",PinType.PinCategory="byte",PinType.PinSubCategoryObject=Enum'/Script/Engine.EQuitPreference',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="Quit",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_CallFunction_13"
+         FunctionReference=(MemberParent=Class'/Script/Engine.GameplayStatics',MemberName="SetGamePaused")
+         NodePosX=272
+         NodePosY=768
+         NodeGuid=96722EF84475A2D9FA4C949F216D0336
+         CustomProperties Pin (PinId=0A7B991F45B60379AC1C6EB33AAA9DDF,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_ComponentBoundEvent_80 B9E240734A16179EF87D389139DCA8A5,K2Node_IfThenElse_0 E0773C08495B369A8C552AA96F96B66B,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=7F3292054ABD587B90049A8EE8D04F82,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_22 4D7960EA4724F819A6462AAEEDC5CC92,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=0F51FC2C4DB5CEC9C3F141A7A3BD2AF6,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/Engine.GameplayStatics',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultObject="/Script/Engine.Default__GameplayStatics",PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=FEFF72F942AB0D52EA154DB8369AA1CE,PinName="WorldContextObject",PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/CoreUObject.Object',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=4FBB5D9746AB9B7244BF8F97980B7BE7,PinName="bPaused",PinType.PinCategory="bool",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=A4AA7AEA4902F56A275776BD5F615994,PinName="ReturnValue",Direction="EGPD_Output",PinType.PinCategory="bool",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_CallFunction_15"
+         bIsPureFunc=True
+         FunctionReference=(MemberParent=Class'/Script/Engine.GameplayStatics',MemberName="GetPlayerCharacter")
+         NodePosX=672
+         NodePosY=656
+         NodeGuid=2685355E4FCC026BEC5EE3AB930F9CC6
+         CustomProperties Pin (PinId=5F9AC90E4F2CB93CC2EF67BC97D2B681,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/Engine.GameplayStatics',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultObject="/Script/Engine.Default__GameplayStatics",PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=FACFA1C247F382CB1639098B9A15F6B7,PinName="WorldContextObject",PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/CoreUObject.Object',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=25A292834D62F2CB86AFDB9F6819AE10,PinName="PlayerIndex",PinType.PinCategory="int",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="0",AutogeneratedDefaultValue="0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=56A0CDC04F09FBABEC2A5F8F838A4909,PinName="ReturnValue",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/Engine.Character',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_DynamicCast_0 A4CFB18943A918890DC14BA5BE7A5B3B,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_CallFunction_22"
+         FunctionReference=(MemberName="RemoveFromParent",bSelfContext=True)
+         NodePosX=672
+         NodePosY=784
+         NodeGuid=D9E1533444F86DA1104FCC8CB6897633
+         CustomProperties Pin (PinId=4D7960EA4724F819A6462AAEEDC5CC92,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_13 7F3292054ABD587B90049A8EE8D04F82,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=A6FCC42C4D88547BFAD223A0E266EC4C,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_DynamicCast_0 81FAE6C447F5F26C752FD79860CF3CBD,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=B93167C9411E0FDAC1FCEBAEDFCF484B,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/UMG.Widget',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_CallFunction_58"
+         FunctionReference=(MemberParent=Class'/Script/UMG.WidgetBlueprintLibrary',MemberName="SetInputMode_GameOnly")
+         NodePosX=1632
+         NodePosY=848
+         NodeGuid=A797CDD5428843E303CE31AC919A732D
+         CustomProperties Pin (PinId=0046BA2448D300DEBC765EB4B7C1740C,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_VariableSet_0 B9B559B84BDFDDA9358DE3A8AEB19608,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=EC1EEAF0415D85C06D382CA5AC188099,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=B6D6AFDC4A8E952D9F024FAA6CEC5A70,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/UMG.WidgetBlueprintLibrary',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultObject="/Script/UMG.Default__WidgetBlueprintLibrary",PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=6C2066A343B8E97E0EB8ED985B5CD006,PinName="Target",PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/Engine.PlayerController',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_59 C2B649274A9943466FDAB9B160586632,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_CallFunction_59"
+         bIsPureFunc=True
+         FunctionReference=(MemberParent=Class'/Script/Engine.GameplayStatics',MemberName="GetPlayerController")
+         NodePosX=1488
+         NodePosY=720
+         NodeGuid=D4341A174C47EDA38C4586B216A842B5
+         CustomProperties Pin (PinId=621485EB4F2AEF6BB9152C86CE3E8A26,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/Engine.GameplayStatics',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultObject="/Script/Engine.Default__GameplayStatics",PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=A8D7983F4B3A74C0A86EE2806BCDC4E8,PinName="WorldContextObject",PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/CoreUObject.Object',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=CA35C4904F43C2B27F0998818D64EBF1,PinName="PlayerIndex",PinType.PinCategory="int",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="0",AutogeneratedDefaultValue="0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=C2B649274A9943466FDAB9B160586632,PinName="ReturnValue",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/Engine.PlayerController',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_58 6C2066A343B8E97E0EB8ED985B5CD006,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_CallFunction_92"
+         FunctionReference=(MemberParent=Class'/Script/Engine.KismetSystemLibrary',MemberName="Delay")
+         NodePosX=240
+         NodePosY=208
+         NodeGuid=E597B9D8429514F07F0E5AA5668475DD
+         CustomProperties Pin (PinId=A0CF51614B1BCEA0F3933AB6DB27B0F5,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_Event_1 7C62A3894A3AA4B67B5985A7ECA49A39,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=1BA4A2FA460FB2C7A55EB3A260C616B5,PinName="then",PinFriendlyName="Completed",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_IfThenElse_0 85406A7543941A4177F85FAD5FEBC840,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=57EB80154EF8690725E564A5B533DB2E,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/Engine.KismetSystemLibrary',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultObject="/Script/Engine.Default__KismetSystemLibrary",PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=FB548E6647F1A46399C21BA1676FF8C5,PinName="WorldContextObject",PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/CoreUObject.Object',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=55CB50C54D5995939A6C069B874FB8C4,PinName="Duration",PinType.PinCategory="float",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="0.2",AutogeneratedDefaultValue="0.2",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=57DD313B4A310BABD4F0E7BFCBECCE8F,PinName="LatentInfo",PinType.PinCategory="struct",PinType.PinSubCategoryObject=ScriptStruct'/Script/Engine.LatentActionInfo',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="LatentInfo",AutogeneratedDefaultValue="LatentInfo",PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_CallFunction_93"
+         bIsPureFunc=True
+         FunctionReference=(MemberParent=Class'/Script/Engine.GameplayStatics',MemberName="GetPlayerController")
+         NodePosX=208
+         NodePosY=368
+         NodeGuid=1A361030418C4FAA35D0738554E5811E
+         CustomProperties Pin (PinId=4CEF7B0740F2B2C6EC4DB1A8261FA2DF,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/Engine.GameplayStatics',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultObject="/Script/Engine.Default__GameplayStatics",PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=4724A47A4C875DE266C2C29ED7EA5809,PinName="WorldContextObject",PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/CoreUObject.Object',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=F407D51C40922F0DC709C2A6CCC70104,PinName="PlayerIndex",PinType.PinCategory="int",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="0",AutogeneratedDefaultValue="0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=C402C04A4A2332111BEF0EB9079DA46B,PinName="ReturnValue",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/Engine.PlayerController',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_94 FDF9D1BC467B989D5E326AA1D4416F1A,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_CallFunction_94"
+         bIsPureFunc=True
+         bIsConstFunc=True
+         FunctionReference=(MemberParent=Class'/Script/Engine.PlayerController',MemberName="IsInputKeyDown")
+         NodePosX=528
+         NodePosY=304
+         NodeGuid=90F9DF874E90A849C180659A8B2955C5
+         CustomProperties Pin (PinId=FDF9D1BC467B989D5E326AA1D4416F1A,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/Engine.PlayerController',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_93 C402C04A4A2332111BEF0EB9079DA46B,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=53293AAC445C08CBFCA0138DC98A6109,PinName="Key",PinType.PinCategory="struct",PinType.PinSubCategoryObject=ScriptStruct'/Script/InputCore.Key',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="P",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=0540E8CF4C2566E735654F86F3C30CE4,PinName="ReturnValue",Direction="EGPD_Output",PinType.PinCategory="bool",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,AutogeneratedDefaultValue="false",LinkedTo=(K2Node_IfThenElse_0 0B3B66854E5858DF610F56847EAB38EB,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_ComponentBoundEvent_10"
+         DelegatePropertyName="OnClicked"
+         DelegateOwnerClass=Class'/Script/UMG.Button'
+         ComponentPropertyName="Quit"
+         EventReference=(MemberParent=Package'"/Script/UMG"',MemberName="OnButtonClickedEvent__DelegateSignature")
+         bInternalEvent=True
+         CustomFunctionName="BndEvt__Button_155_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature"
+         NodePosY=464
+         NodeGuid=D65A85124BC384FFDF3CD792216F347C
+         CustomProperties Pin (PinId=CB62536B4B1CF259C4D1DEAD0E0EB94B,PinName="OutputDelegate",Direction="EGPD_Output",PinType.PinCategory="delegate",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(MemberParent=WidgetBlueprintGeneratedClass'/Game/ThirdPersonBP/Blueprints/Widgets/PauseMenu.PauseMenu_C',MemberName="BndEvt__Button_155_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature"),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=B660E9154B7680B46FCB49A8DDABDFEE,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_1 7C01004D45CEDAE843734798C5A4E341,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_ComponentBoundEvent_80"
+         DelegatePropertyName="OnClicked"
+         DelegateOwnerClass=Class'/Script/UMG.Button'
+         ComponentPropertyName="Button_294"
+         EventReference=(MemberParent=Package'"/Script/UMG"',MemberName="OnButtonClickedEvent__DelegateSignature")
+         bInternalEvent=True
+         CustomFunctionName="BndEvt__Button_294_K2Node_ComponentBoundEvent_80_OnButtonClickedEvent__DelegateSignature"
+         NodePosY=720
+         NodeGuid=D09C8CBC480F078AA7A78A809B12BC54
+         CustomProperties Pin (PinId=1EBFC6564EAA1A18B386B69330D0DA9F,PinName="OutputDelegate",Direction="EGPD_Output",PinType.PinCategory="delegate",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(MemberParent=WidgetBlueprintGeneratedClass'/Game/ThirdPersonBP/Blueprints/Widgets/PauseMenu.PauseMenu_C',MemberName="BndEvt__Button_294_K2Node_ComponentBoundEvent_80_OnButtonClickedEvent__DelegateSignature"),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=B9E240734A16179EF87D389139DCA8A5,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_13 0A7B991F45B60379AC1C6EB33AAA9DDF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_DynamicCast_0"
+         TargetType=BlueprintGeneratedClass'/Game/ThirdPersonBP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C'
+         NodePosX=992
+         NodePosY=736
+         NodeGuid=C662454C4AA216E641D521B895714A39
+         CustomProperties Pin (PinId=81FAE6C447F5F26C752FD79860CF3CBD,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_22 A6FCC42C4D88547BFAD223A0E266EC4C,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=CC14AF2745B67F471E2D96A941E31999,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_VariableSet_0 2F5312144996023E4586D8AFEDDAA3D6,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=552B4E8C4F532E3A8F2247B32E49355B,PinName="CastFailed",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=A4CFB18943A918890DC14BA5BE7A5B3B,PinName="Object",PinType.PinCategory="object",PinType.PinSubCategoryObject=Class'/Script/CoreUObject.Object',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_15 56A0CDC04F09FBABEC2A5F8F838A4909,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=209BA4F84BB2933901424A800587A1A6,PinName="AsThird Person Character",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategoryObject=BlueprintGeneratedClass'/Game/ThirdPersonBP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_VariableSet_0 005C22D041839964AD45F4808E0B986F,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=8FC38BA14463A565761DB3B938B8AE62,PinName="bSuccess",Direction="EGPD_Output",PinType.PinCategory="bool",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=True,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_Event_0"
+         EventReference=(MemberParent=Class'/Script/UMG.UserWidget',MemberName="Construct")
+         bOverrideFunction=True
+         NodeComment="This node is disabled and will not be called.\nDrag off pins to build functionality."
+         bCommentBubblePinned=True
+         bCommentBubbleVisible=True
+         NodeGuid=A0B78DD34719A9B52851319D1FE41640
+         EnabledState=Disabled
+         CustomProperties Pin (PinId=0520FC5747F55315AD941BAA90A4D091,PinName="OutputDelegate",Direction="EGPD_Output",PinType.PinCategory="delegate",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(MemberParent=Class'/Script/UMG.UserWidget',MemberName="Construct"),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=513C587549A5923B31447B9BC6F39CA2,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_Event_1"
+         EventReference=(MemberParent=Class'/Script/UMG.UserWidget',MemberName="Tick")
+         bOverrideFunction=True
+         NodePosY=200
+         bCommentBubblePinned=True
+         NodeGuid=DD8F410F4A9A438F94260DB21AAE143B
+         CustomProperties Pin (PinId=E440349843D593A487FD339E5470CC56,PinName="OutputDelegate",Direction="EGPD_Output",PinType.PinCategory="delegate",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(MemberParent=Class'/Script/UMG.UserWidget',MemberName="Tick"),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=7C62A3894A3AA4B67B5985A7ECA49A39,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_92 A0CF51614B1BCEA0F3933AB6DB27B0F5,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=2D9A302645AB9A64B695418857A103D7,PinName="MyGeometry",PinToolTip="My Geometry\nGeometry Structure\n\nThe space allotted for this widget",Direction="EGPD_Output",PinType.PinCategory="struct",PinType.PinSubCategoryObject=ScriptStruct'/Script/SlateCore.Geometry',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=5FD379D24322571F6F0E74BA5F939EB3,PinName="InDeltaTime",PinToolTip="In Delta Time\nFloat\n\nReal time passed since last tick",Direction="EGPD_Output",PinType.PinCategory="float",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="0.0",AutogeneratedDefaultValue="0.0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_IfThenElse_0"
+         NodePosX=720
+         NodePosY=160
+         NodeGuid=9F7150204F18353719A2088F803D801D
+         CustomProperties Pin (PinId=85406A7543941A4177F85FAD5FEBC840,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_92 1BA4A2FA460FB2C7A55EB3A260C616B5,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=0B3B66854E5858DF610F56847EAB38EB,PinName="Condition",PinType.PinCategory="bool",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="false",AutogeneratedDefaultValue="true",LinkedTo=(K2Node_CallFunction_94 0540E8CF4C2566E735654F86F3C30CE4,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=E0773C08495B369A8C552AA96F96B66B,PinName="then",PinFriendlyName=NSLOCTEXT("K2Node", "true", "true"),Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_13 0A7B991F45B60379AC1C6EB33AAA9DDF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=44231C584C7C51EE8306B9B69EC6BB39,PinName="else",PinFriendlyName=NSLOCTEXT("K2Node", "false", "false"),Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_VariableSet_0"
+         VariableReference=(MemberParent=BlueprintGeneratedClass'/Game/ThirdPersonBP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C',MemberName="IsScreenon",MemberGuid=60F70ADB4B10A035F8C4559DFEFB0B83)
+         SelfContextInfo=NotSelfContext
+         NodePosX=1360
+         NodePosY=784
+         NodeGuid=0D73CE58448ACBE1DD3ACBBB95C79918
+         CustomProperties Pin (PinId=2F5312144996023E4586D8AFEDDAA3D6,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_DynamicCast_0 CC14AF2745B67F471E2D96A941E31999,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=B9B559B84BDFDDA9358DE3A8AEB19608,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_58 0046BA2448D300DEBC765EB4B7C1740C,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=BC9BC26C4EB82589B5ADE686447D2C0A,PinName="IsScreenon",PinType.PinCategory="bool",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=A9D0CEBA40DEADED562BC88FB92DA110,PinName="Output_Get",PinToolTip="Retrieves the value of the variable, can use instead of a separate Get node",Direction="EGPD_Output",PinType.PinCategory="bool",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=005C22D041839964AD45F4808E0B986F,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategoryObject=BlueprintGeneratedClass'/Game/ThirdPersonBP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_DynamicCast_0 209BA4F84BB2933901424A800587A1A6,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      Nodes(0)=K2Node_Event'K2Node_Event_0'
+      Nodes(1)=K2Node_Event'K2Node_Event_1'
+      Nodes(2)=K2Node_ComponentBoundEvent'K2Node_ComponentBoundEvent_10'
+      Nodes(3)=K2Node_CallFunction'K2Node_CallFunction_1'
+      Nodes(4)=K2Node_ComponentBoundEvent'K2Node_ComponentBoundEvent_80'
+      Nodes(5)=K2Node_CallFunction'K2Node_CallFunction_13'
+      Nodes(6)=K2Node_CallFunction'K2Node_CallFunction_22'
+      Nodes(7)=K2Node_DynamicCast'K2Node_DynamicCast_0'
+      Nodes(8)=K2Node_CallFunction'K2Node_CallFunction_15'
+      Nodes(9)=K2Node_VariableSet'K2Node_VariableSet_0'
+      Nodes(10)=K2Node_CallFunction'K2Node_CallFunction_58'
+      Nodes(11)=K2Node_CallFunction'K2Node_CallFunction_59'
+      Nodes(12)=K2Node_CallFunction'K2Node_CallFunction_92'
+      Nodes(13)=K2Node_IfThenElse'K2Node_IfThenElse_0'
+      Nodes(14)=K2Node_CallFunction'K2Node_CallFunction_93'
+      Nodes(15)=K2Node_CallFunction'K2Node_CallFunction_94'
+      bAllowDeletion=False
+      GraphGuid=1BA1CE0847CD45B9096A96B8E29C6290
+   End Object
+   Begin Object Name="BndEvt__Button_294_K2Node_ComponentBoundEvent_80_OnButtonClickedEvent__DelegateSignature"
+      Begin Object Name="K2Node_FunctionEntry_9"
+         CustomGeneratedFunctionName="BndEvt__Button_294_K2Node_ComponentBoundEvent_80_OnButtonClickedEvent__DelegateSignature"
+         SignatureName="OnButtonClickedEvent__DelegateSignature"
+         NodePosX=-200
+         NodePosY=-2000
+         NodeGuid=33D704ED4CEE5F3F16F414BF5E5602FE
+         CustomProperties Pin (PinId=68714A6C49DD2E22941D259B07587D08,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_33 8607BC814092EBCA9D0574A0FAB4D7D9,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_CallFunction_33"
+         FunctionReference=(MemberName="ExecuteUbergraph_PauseMenu",bSelfContext=True)
+         NodePosX=300
+         NodePosY=-2000
+         NodeGuid=E875433948099893C53814A08CC507ED
+         CustomProperties Pin (PinId=8607BC814092EBCA9D0574A0FAB4D7D9,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_FunctionEntry_9 68714A6C49DD2E22941D259B07587D08,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=67F8F2204CDA7C47004EBDBCE7D38827,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=5DD9C41144585FE174E8828D70810577,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategory="self",PinType.PinSubCategoryObject=WidgetBlueprintGeneratedClass'/Game/ThirdPersonBP/Blueprints/Widgets/PauseMenu.SKEL_PauseMenu_C',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=355217D144DDBA69E0EEB88132C96DAD,PinName="EntryPoint",PinType.PinCategory="int",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="0",AutogeneratedDefaultValue="0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      Nodes(0)=K2Node_FunctionEntry'K2Node_FunctionEntry_9'
+      Nodes(1)=K2Node_CallFunction'K2Node_CallFunction_33'
+      GraphGuid=C9C38EFD4EDBFFB2C70CDAB972E62144
+   End Object
+   Begin Object Name="BndEvt__Button_155_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature"
+      Begin Object Name="K2Node_FunctionEntry_10"
+         CustomGeneratedFunctionName="BndEvt__Button_155_K2Node_ComponentBoundEvent_10_OnButtonClickedEvent__DelegateSignature"
+         SignatureName="OnButtonClickedEvent__DelegateSignature"
+         NodePosX=-200
+         NodePosY=-2000
+         NodeGuid=C08C858849A67310FA3A7C80C2A6CD40
+         CustomProperties Pin (PinId=303FF99248F3F2583C88638CBD3CBAF6,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_34 1A3056C34B7103227DA34FA5C5D9414A,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_CallFunction_34"
+         FunctionReference=(MemberName="ExecuteUbergraph_PauseMenu",bSelfContext=True)
+         NodePosX=300
+         NodePosY=-2000
+         NodeGuid=A86776C642DD0361B45BDFB86AF18B41
+         CustomProperties Pin (PinId=1A3056C34B7103227DA34FA5C5D9414A,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_FunctionEntry_10 303FF99248F3F2583C88638CBD3CBAF6,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=B18FE792468ABF5A761D2ABECC7C4A99,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=95D664A34D935C205C7C7EA95A702B61,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategory="self",PinType.PinSubCategoryObject=WidgetBlueprintGeneratedClass'/Game/ThirdPersonBP/Blueprints/Widgets/PauseMenu.SKEL_PauseMenu_C',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=5CA55A7E42A63BE0B96B4B973D93F546,PinName="EntryPoint",PinType.PinCategory="int",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="0",AutogeneratedDefaultValue="0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      Nodes(0)=K2Node_FunctionEntry'K2Node_FunctionEntry_10'
+      Nodes(1)=K2Node_CallFunction'K2Node_CallFunction_34'
+      GraphGuid=A4BD50AC47E9BECFD16C68AE653F615C
+   End Object
+   Begin Object Name="Tick"
+      Begin Object Name="K2Node_FunctionEntry_11"
+         CustomGeneratedFunctionName="Tick"
+         SignatureClass=Class'/Script/UMG.UserWidget'
+         SignatureName="Tick"
+         NodePosX=-200
+         NodePosY=-2000
+         NodeGuid=C448579F4DC59CFD9675999A400FED13
+         CustomProperties Pin (PinId=05CC86F14C432BDA034184A0C73652D0,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_SetVariableOnPersistentFrame_2 2FCCC536455A1AAB10A228BDE829031E,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=3E103DDB4EF17C330A1F198BAF856CCE,PinName="MyGeometry",PinToolTip="My Geometry\nGeometry Structure\n\nThe space allotted for this widget",Direction="EGPD_Output",PinType.PinCategory="struct",PinType.PinSubCategoryObject=ScriptStruct'/Script/SlateCore.Geometry',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_SetVariableOnPersistentFrame_2 607CF8D543F2DDC4D624CEBD29CFDB2E,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=29A7E06B46E809C853AD3AADFA0947BA,PinName="InDeltaTime",PinToolTip="In Delta Time\nFloat\n\nReal time passed since last tick",Direction="EGPD_Output",PinType.PinCategory="float",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="0.0",AutogeneratedDefaultValue="0.0",LinkedTo=(K2Node_SetVariableOnPersistentFrame_2 0C2C48754C1591B8B97DDAB926404CB4,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_SetVariableOnPersistentFrame_2"
+         NodePosX=-560
+         NodePosY=-2000
+         NodeGuid=170A5E244B1F12863EDAC9A933967033
+         CustomProperties Pin (PinId=2FCCC536455A1AAB10A228BDE829031E,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_FunctionEntry_11 05CC86F14C432BDA034184A0C73652D0,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=8167CCB743772D6DD07C58AC7D0134A1,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_CallFunction_35 E22FB07A43DED01C4EF4D59E5349C5A7,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=607CF8D543F2DDC4D624CEBD29CFDB2E,PinName="K2Node_Event_MyGeometry",PinType.PinCategory="struct",PinType.PinSubCategoryObject=ScriptStruct'/Script/SlateCore.Geometry',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_FunctionEntry_11 3E103DDB4EF17C330A1F198BAF856CCE,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=0C2C48754C1591B8B97DDAB926404CB4,PinName="K2Node_Event_InDeltaTime",PinType.PinCategory="float",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_FunctionEntry_11 29A7E06B46E809C853AD3AADFA0947BA,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Begin Object Name="K2Node_CallFunction_35"
+         FunctionReference=(MemberName="ExecuteUbergraph_PauseMenu",bSelfContext=True)
+         NodePosX=300
+         NodePosY=-2000
+         NodeGuid=EA5A5562489F8B4F150463BBA9C5C87D
+         CustomProperties Pin (PinId=E22FB07A43DED01C4EF4D59E5349C5A7,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,LinkedTo=(K2Node_SetVariableOnPersistentFrame_2 8167CCB743772D6DD07C58AC7D0134A1,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=BB1EE8F14E508481DEA645AAA2DF69DE,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=9E053A824C03BAF1F193E0B3734AE9C4,PinName="self",PinFriendlyName=NSLOCTEXT("K2Node", "Target", "Target"),PinType.PinCategory="object",PinType.PinSubCategory="self",PinType.PinSubCategoryObject=WidgetBlueprintGeneratedClass'/Game/ThirdPersonBP/Blueprints/Widgets/PauseMenu.SKEL_PauseMenu_C',PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+         CustomProperties Pin (PinId=F87B92DE4E85C7D807CC6EA9193B4CFA,PinName="EntryPoint",PinType.PinCategory="int",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.bIsArray=False,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,DefaultValue="0",AutogeneratedDefaultValue="0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,)
+      End Object
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      Nodes(0)=K2Node_FunctionEntry'K2Node_FunctionEntry_11'
+      Nodes(1)=K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_2'
+      Nodes(2)=K2Node_CallFunction'K2Node_CallFunction_35'
+      GraphGuid=66A397F947996A1F70F9F7924CE98B23
+   End Object
+   Begin Object Name="K2Node_ComponentBoundEvent_13"
+      DelegatePropertyName="OnUnhovered"
+      DelegateOwnerClass=Class'/Script/UMG.Button'
+      ComponentPropertyName="Button_294"
+      EventReference=(MemberParent=Package'"/Script/UMG"',MemberName="OnButtonHoverEvent__DelegateSignature")
+      bInternalEvent=True
+      CustomFunctionName="BndEvt__Button_294_K2Node_ComponentBoundEvent_13_OnButtonHoverEvent__DelegateSignature"
+   End Object
+   Begin Object Name="K2Node_ComponentBoundEvent_12"
+      DelegatePropertyName="OnHovered"
+      DelegateOwnerClass=Class'/Script/UMG.Button'
+      ComponentPropertyName="Button_294"
+      EventReference=(MemberParent=Package'"/Script/UMG"',MemberName="OnButtonHoverEvent__DelegateSignature")
+      bInternalEvent=True
+      CustomFunctionName="BndEvt__Button_294_K2Node_ComponentBoundEvent_12_OnButtonHoverEvent__DelegateSignature"
+   End Object
+   Begin Object Name="K2Node_ComponentBoundEvent_11"
+      DelegatePropertyName="OnReleased"
+      DelegateOwnerClass=Class'/Script/UMG.Button'
+      ComponentPropertyName="Button_294"
+      EventReference=(MemberParent=Package'"/Script/UMG"',MemberName="OnButtonReleasedEvent__DelegateSignature")
+      bInternalEvent=True
+      CustomFunctionName="BndEvt__Button_294_K2Node_ComponentBoundEvent_11_OnButtonReleasedEvent__DelegateSignature"
+   End Object
+   Begin Object Name="K2Node_ComponentBoundEvent_10"
+      DelegatePropertyName="OnPressed"
+      DelegateOwnerClass=Class'/Script/UMG.Button'
+      ComponentPropertyName="Button_294"
+      EventReference=(MemberParent=Package'"/Script/UMG"',MemberName="OnButtonPressedEvent__DelegateSignature")
+      bInternalEvent=True
+      CustomFunctionName="BndEvt__Button_294_K2Node_ComponentBoundEvent_10_OnButtonPressedEvent__DelegateSignature"
+   End Object
+   Begin Object Name="K2Node_ComponentBoundEvent_9"
+      DelegatePropertyName="OnUnhovered"
+      DelegateOwnerClass=Class'/Script/UMG.Button'
+      ComponentPropertyName="Quit"
+      EventReference=(MemberParent=Package'"/Script/UMG"',MemberName="OnButtonHoverEvent__DelegateSignature")
+      bInternalEvent=True
+      CustomFunctionName="BndEvt__Quit_K2Node_ComponentBoundEvent_9_OnButtonHoverEvent__DelegateSignature"
+   End Object
+   Begin Object Name="K2Node_ComponentBoundEvent_8"
+      DelegatePropertyName="OnHovered"
+      DelegateOwnerClass=Class'/Script/UMG.Button'
+      ComponentPropertyName="Quit"
+      EventReference=(MemberParent=Package'"/Script/UMG"',MemberName="OnButtonHoverEvent__DelegateSignature")
+      bInternalEvent=True
+      CustomFunctionName="BndEvt__Quit_K2Node_ComponentBoundEvent_8_OnButtonHoverEvent__DelegateSignature"
+   End Object
+   Begin Object Name="K2Node_ComponentBoundEvent_7"
+      DelegatePropertyName="OnReleased"
+      DelegateOwnerClass=Class'/Script/UMG.Button'
+      ComponentPropertyName="Quit"
+      EventReference=(MemberParent=Package'"/Script/UMG"',MemberName="OnButtonReleasedEvent__DelegateSignature")
+      bInternalEvent=True
+      CustomFunctionName="BndEvt__Quit_K2Node_ComponentBoundEvent_7_OnButtonReleasedEvent__DelegateSignature"
+   End Object
+   Begin Object Name="K2Node_ComponentBoundEvent_6"
+      DelegatePropertyName="OnPressed"
+      DelegateOwnerClass=Class'/Script/UMG.Button'
+      ComponentPropertyName="Quit"
+      EventReference=(MemberParent=Package'"/Script/UMG"',MemberName="OnButtonPressedEvent__DelegateSignature")
+      bInternalEvent=True
+      CustomFunctionName="BndEvt__Quit_K2Node_ComponentBoundEvent_6_OnButtonPressedEvent__DelegateSignature"
+   End Object
+   WidgetTree=WidgetTree
+   ParentClass=Class'/Script/UMG.UserWidget'
+   UbergraphPages(0)=EdGraph'EventGraph'
+   CategorySorting(0)="Pause Menu"
+   BlueprintSystemVersion=2
+   LastEditedDocuments(0)=(EditedObject=EdGraph'EventGraph',SavedViewOffset=(X=-97.087456,Y=147.883453),SavedZoomAmount=0.675000)
+   GeneratedClass=WidgetBlueprintGeneratedClass'PauseMenu_C'
+   bLegacyNeedToPurgeSkelRefs=False
+   bLegacyGeneratedClassIsAuthoritative=True
+   BlueprintGuid=8C13142C4F1F85E5210990926335E1E5
+End Object
